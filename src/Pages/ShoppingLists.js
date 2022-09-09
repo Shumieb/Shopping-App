@@ -1,8 +1,11 @@
 import React from 'react'
+import PageHeading from '../SharedComponents/PageHeading'
 
 const ShoppingLists = () => {
   return (
-    <div>ShoppingLists</div>
+    <main className='container px-4'>
+        <PageHeading pageHeading={"Shopping Lists"}/>
+    </main>
   )
 }
 

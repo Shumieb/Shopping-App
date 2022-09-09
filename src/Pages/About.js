@@ -1,8 +1,11 @@
 import React from 'react'
+import PageHeading from '../SharedComponents/PageHeading'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <PageHeading pageHeading={"About"}/>
+    </div>
   )
 }
 
