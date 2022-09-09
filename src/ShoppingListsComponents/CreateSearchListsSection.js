@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CreateSearchListsSection = ({ toggleAddShoppingListForm }) => {
+const CreateSearchListsSection = ({ toggleAddShoppingListForm, toggleSearchShoppingListsForm }) => {
 
   return (
     <section className='p-4 my-4 flex flex-row justify-center'>
@@ -12,6 +12,7 @@ const CreateSearchListsSection = ({ toggleAddShoppingListForm }) => {
         </button>
         <button 
             className='bg-pink-900 text-white rounded px-6 py-2 ml-4 text-lg shadow-lg shadow-pink-100 hover:shadow-xl transition ease-in-out delay-100'
+            onClick={toggleSearchShoppingListsForm}
         >
             Search For Shopping Lists
         </button>
