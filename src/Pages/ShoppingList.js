@@ -1,10 +1,11 @@
 import React from 'react'
+import ListItem from '../SharedComponents/ListItem'
 
 const ShoppingList = () => {
   return (
-    <div>
-        <li>Shopping list</li>
-    </div>
+    <main>
+        Shopping list     
+    </main>
   )
 }
 

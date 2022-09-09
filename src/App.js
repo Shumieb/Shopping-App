@@ -4,6 +4,7 @@ import ShoppingLists from './Pages/ShoppingLists';
 import ShoppingList from './Pages/ShoppingList';
 import About from './Pages/About';
 import { Route, Routes} from "react-router-dom";
+import Footer from "./SharedComponents/Footer";
 
 function App() {
   return (
@@ -11,11 +12,11 @@ function App() {
       <NavBar/>
       <Routes>
         <Route index element={<Home />} />
-            <Route path='about' element={<About />}/>
-            <Route path="shoppinglists" element={<ShoppingLists/>}>
-              <Route path=":listId" element={<ShoppingList />} />         
-        </Route>
-      </Routes>      
+        <Route path='about' element={<About />}/>
+        <Route path="shoppinglists" element={<ShoppingLists/>}/>
+        <Route path="shoppinglists/:listId" element={<ShoppingList />} />        
+      </Routes>     
+      <Footer /> 
     </div>
   );
 }
